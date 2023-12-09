@@ -1,0 +1,40 @@
+ 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <form name="f">
+        <input   type="text" id="view" placeholder="0"><br />
+       <input type="button" class="num"  value="1" onclick="f.view.value+=1">
+       <input type="button" class="num"  value="2" onclick="f.view.value+=2">
+       <input type="button" class="num"  value="3" onclick="f.view.value+=3">
+       <input type="button" class="num btn-m"  value="+" onclick="add()">
+       <br />
+       <input type="button" class="num"  value="4" onclick="f.view.value+=4">
+       <input type="button" class="num"  value="5" onclick="f.view.value+=5">
+       <input type="button" class="num"  value="6" onclick="f.view.value+=6">
+       <input type="button" class="num btn btn-m"  value="-" onclick="mine()">
+       <br />
+       <input type="button" class="num"  value="7" onclick="f.view.value+=7">
+       <input type="button" class="num"  value="8" onclick="f.view.value+=8">
+       <input type="button" class="num"  value="9" onclick="f.view.value+=9">
+       <input type="button" class="num btn-m"  value="/" onclick="div()">
+       <br />
+       <input type="button" class="num  btn-danger"  value="C" onclick="f.view.value=''">
+       <input type="button" class="num"  value="0" onclick="f.view.value+=0">
+       <input type="button" class="num btn-success"  value="=" onclick="f.view.value=eval(f.view.value)">
+       <input type="button" class="num btn-m"  value="x" onclick="mult()">
+       <br />
+    </form>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
+ 
